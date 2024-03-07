@@ -1,0 +1,8 @@
+import simalign
+
+source_sentence = "The school has to bring its programs into alignment with state requirements"
+target_sentence = "Die Schule muss ihre Programme an die staatlichen Anforderungen anpassen"
+
+model = simalign.SentenceAligner()
+result = model.get_word_aligns(source_sentence, target_sentence)
+print(result)
